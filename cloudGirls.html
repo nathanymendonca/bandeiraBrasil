@@ -1,0 +1,70 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+    
+    var tela = document.querySelector("canvas");
+    var pincel = tela.getContext("2d");
+
+    // background cinza
+    pincel.fillStyle = "white"
+    pincel.fillRect(0, 0, 600, 400);
+
+    // esfera rosa
+    pincel.font = '20px Georgia black';
+    pincel.fillStyle = "pink";
+    pincel.beginPath();
+    pincel.arc(300, 100, 95, 0, 2 * 3.14);
+    pincel.fill();
+
+
+
+    // retangulo preto a esquerda
+    pincel.fillStyle = "black";
+    pincel.fillRect(355, 160, 10, 155);
+
+    // retangulo preto a direita (corda do balanço)
+    pincel.fillStyle = "black";
+    pincel.fillRect(235, 160, 10, 155);
+
+
+
+    // retangulo preto (assento do balanço)
+    pincel.fillStyle = "black";
+    pincel.fillRect(235, 295, 120, 10);
+
+    // retangulo preto (corpo da boneca)
+    pincel.fillStyle = "black";
+    pincel.fillRect(290, 220, 20, 80);
+
+    // esfera preta (cabeça da boneca)
+    pincel.fillStyle = "black";
+    pincel.beginPath();
+    pincel.arc(300, 199, 20, 0, 2 * 3.14);
+    pincel.fill();
+
+    // retangulo preto (braço esquerdo da boneca)
+    pincel.fillStyle = "black";
+    pincel.fillRect(235, 240, 55, 12);
+
+    // retangulo preto (braço da boneca)
+    pincel.fillStyle = "black";
+    pincel.fillRect(305, 240, 55, 12);
+
+    // retangulo preto a direita (corda do balanço)
+    pincel.fillStyle = "black";
+    pincel.fillRect(310, 300, 12, 40);
+
+    // retangulo preto a direita (corda do balanço)
+    pincel.fillStyle = "black";
+    pincel.fillRect(280, 300, 12, 40);
+
+    // retangulo preto (corpo da boneca)
+    pincel.fillStyle = "black";
+    pincel.fillRect(310, 209, 15, 10);
+
+    // retangulo preto (corpo da boneca)
+    pincel.fillStyle = "black";
+    pincel.fillRect(275, 209, 15, 10);
+
+</script>
